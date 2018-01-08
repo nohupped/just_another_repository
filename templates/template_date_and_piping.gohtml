@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>functions</title>
+</head>
+<body>
+<H4>
+    Make sure the struct members inside the struct that wraps up datetime and value to pass to math functions are exported.
+</H4>
+
+Without date formatting: {{.Datetime}}
+<br>
+
+With date formatting: {{fdateMDY .Datetime}}
+
+<br>
+Value in function: {{.Valtodomath}}
+<br>
+Double: {{.Valtodomath | fdouble}}
+<br>
+Square: {{.Valtodomath | fsqr}}
+<br>
+Squareroot of square by piping functions (sqrt(10 ^ 2)): {{.Valtodomath | fsqr | fsqrt}}
+
+
+</body>
+</html>
