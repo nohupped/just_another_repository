@@ -5,7 +5,6 @@ import (
 	"time"
 	"os"
 	"math"
-	"fmt"
 )
 
 var template_date *template.Template
